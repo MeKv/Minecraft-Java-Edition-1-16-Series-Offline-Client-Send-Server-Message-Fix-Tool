@@ -1,2 +1,1 @@
-# Minecraft-Java-Edition-1-16-x-Offline-Client-Send-Server-Message-Fix-Tool
-Minecraft Java Edition 1.16.x Offline Client Send Server Message Fix Tool
+# 我的世界Java 1.16.x 离线模式客户端发送服务器消息修复工具
