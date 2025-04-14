@@ -1,5 +1,6 @@
 @REM Copyright (c) 2025 anjisuan608
 @echo off
+chcp 65001
 color 03
 title Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool
 @REM 判断是否以管理员身份运行
