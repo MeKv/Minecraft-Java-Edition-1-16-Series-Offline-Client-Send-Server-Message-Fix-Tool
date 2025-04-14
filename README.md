@@ -3,9 +3,10 @@
 
 <p>若访问缓慢可尝试前往以下站点的项目仓库:</p>
 <ul>
-  <li>GitHub: <a href="https://github.com/anjisuan608/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="GieCode">GitHub项目地址</a></li>
-  <li>Gitee: <a href="https://gitee.com/anjisuan608/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="GieCode">Gitee项目地址</a></li>
-  <li>GitCode: <a href="https://gitcode.com/anjisuan608/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="GieCode">GitCode项目地址</a></li>
+  <li>GitHub: <a href="https://github.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="GitHub">GitHub项目地址</a>&ensp;<a href="https://github.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool/releases" title="GitHub">GitHub下载地址</a></li>
+  <li>GitCode: <a href="https://gitcode.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="GitCode">GitCode项目地址</a>&ensp;<a href="https://gitcode.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool/releases" title="GitCode">GitCode下载地址</a></li>
+  <li>Gitee: <a href="https://gitee.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="Gitee">Gitee项目地址</a>&ensp;<a href="https://gitee.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool/releases" title="Gitee">Gitee下载地址</a></li>
+  <li>AtomGit: <a href="https://atomgit.com/MeKv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool" title="AtomGit">AtomGit项目地址</a>&ensp;<a href="https://atomgit.com/mekv/Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool/tags?tab=release" title="AtomGit">AtomGit下载地址</a></li>
   <li>GitLab:(停止维护)</li>
   <li>JiHuLab:(暂无)</li>
 </ul>
