@@ -1,39 +1,33 @@
-@REM SakuraMaple Minecraft Java Edition 1.16 Series Offline Client Send Server Message Fix Tool
-@REM  SSSSS  AAAAA  K   K  U   U  RRRR    AAAAA   M   M  PPPP   L       EEEEE
-@REM S       A   A  K  K   U   U  R   R  A   A   MM MM  P   P  L       E
-@REM  SSS    AAAAA  KKK    U   U  RRRR   AAAAA   M M M  PPPP   L       EEEE
-@REM     S   A   A  K  K   U   U  R  R   A   A   M   M  P      L       E
-@REM SSSS    A   A  K   K  UUUUU  R   R  A   A   M   M  P      LLLLL   EEEEE
-@REM Copyright (c) 2018-2025 SakuraMaple Studio
+@REM Copyright (c) 2025 anjisuan608
 @echo off
 color 03
 title Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool
-@REM ÅĞ¶ÏÊÇ·ñÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ
+@REM åˆ¤æ–­æ˜¯å¦ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ
 net session >nul 2>&1
 if %errorlevel% neq 0 (
     color 04
-    echo ÇëÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ¸ÃÅú´¦Àí!
+    echo è¯·ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œè¯¥æ‰¹å¤„ç†!
     pause
     exit
 )
-@REM ÅĞ¶ÏÊÇ·ñÎªWindows XP¼°Æä¸üÔçµÄ²Ù×÷ÏµÍ³
-ver | findstr "5\.1\." >nul && echo Windows XP¼°Æä¸üÔçµÄ²Ù×÷ÏµÍ³**¿ÉÄÜ**´æÔÚ¼æÈİĞÔÎÊÌâ && pause
-echo µ±Ç°ÓÃ»§:
+@REM åˆ¤æ–­æ˜¯å¦ä¸ºWindows XPåŠå…¶æ›´æ—©çš„æ“ä½œç³»ç»Ÿ
+ver | findstr "5\.1\." >nul && echo Windows XPåŠå…¶æ›´æ—©çš„æ“ä½œç³»ç»Ÿ**å¯èƒ½**å­˜åœ¨å…¼å®¹æ€§é—®é¢˜ && pause
+echo å½“å‰ç”¨æˆ·:
 whoami
-echo µ±Ç°¹¤×÷Ä¿Â¼: %CD%
+echo å½“å‰å·¥ä½œç›®å½•: %CD%
 echo.
-echo **¾¯¸æ**
-echo ÎÒÃÇ¸üÍÆ¼öÊ¹ÓÃLittleSkinºÍMUA¸ßĞ£ÁªÃËµÈµÚÈı·½ÈÏÖ¤·½Ê½´úÌæÀëÏßµÇÂ¼½â¾ö¸ÃÎÊÌâ!
-echo Ê¹ÓÃ¸ÃÅú´¦Àíºó¿ÉÄÜ»áµ¼ÖÂÎ¢ÈíÕı°æµÇÂ¼³öÏÖÒì³£!
-echo ÈôÄúÊÇÕı°æÓÃ»§(»òÓĞÊ¹ÓÃÕı°æµÇÂ¼ĞèÇó)Çë½÷É÷Ê¹ÓÃ¸ÃÅú´¦Àí½â¾öÀëÏßµÇÂ¼·şÎñÆ÷ÏûÏ¢ÎÊÌâ!
-echo **×¢Òâ**
-echo °²È«Èí¼ş¿ÉÄÜ»á×èÖ¹Åú´¦Àí±à¼­hostsÎÄ¼ş
-echo Èô´æÔÚ°²È«Èí¼ş¿ÉÒÔÔİÊ±¹Ø±Õ·À»¤(»òÍË³ö)
-echo »ò³öÏÖ·À»¤ÌáÊ¾Ê±Ñ¡ÔñÔÊĞí²Ù×÷·ÅĞĞÅú´¦Àí
+echo **è­¦å‘Š**
+echo æˆ‘ä»¬æ›´æ¨èä½¿ç”¨LittleSkinå’ŒMUAé«˜æ ¡è”ç›Ÿç­‰ç¬¬ä¸‰æ–¹è®¤è¯æ–¹å¼ä»£æ›¿ç¦»çº¿ç™»å½•è§£å†³è¯¥é—®é¢˜!
+echo ä½¿ç”¨è¯¥æ‰¹å¤„ç†åå¯èƒ½ä¼šå¯¼è‡´å¾®è½¯æ­£ç‰ˆç™»å½•å‡ºç°å¼‚å¸¸!
+echo è‹¥æ‚¨æ˜¯æ­£ç‰ˆç”¨æˆ·(æˆ–æœ‰ä½¿ç”¨æ­£ç‰ˆç™»å½•éœ€æ±‚)è¯·è°¨æ…ä½¿ç”¨è¯¥æ‰¹å¤„ç†è§£å†³ç¦»çº¿ç™»å½•æœåŠ¡å™¨æ¶ˆæ¯é—®é¢˜!
+echo **æ³¨æ„**
+echo å®‰å…¨è½¯ä»¶å¯èƒ½ä¼šé˜»æ­¢æ‰¹å¤„ç†ç¼–è¾‘hostsæ–‡ä»¶
+echo è‹¥å­˜åœ¨å®‰å…¨è½¯ä»¶å¯ä»¥æš‚æ—¶å…³é—­é˜²æŠ¤(æˆ–é€€å‡º)
+echo æˆ–å‡ºç°é˜²æŠ¤æç¤ºæ—¶é€‰æ‹©å…è®¸æ“ä½œæ”¾è¡Œæ‰¹å¤„ç†
 pause
 
 @REM :tpr
-@REM ::Ìø×ª¹ÜÀíÆ÷-¸³Öµ
+@REM ::è·³è½¬ç®¡ç†å™¨-èµ‹å€¼
 @REM if "%tp%" == "" set "TPCode=" && goto tpa
 @REM if "%tp%" == "DataDirectoryChecker" set "TPCode=DataDirectoryChecker" && goto tpa
 @REM if "%tp%" == "CacheDirectoryChecker" set "TPCode=CacheDirectoryChecker" && goto tpa
@@ -44,118 +38,118 @@ pause
 @REM if "%tp%" == "Typer" set "TPCode=Typer" && goto tpa
 @REM if "%tp%" == "Printer" set "TPCode=Printer" && goto tpa
 @REM if "%tp%" == "Output" set "TPCode=Output" && goto tpa
-@REM ::Ã»ÓĞÆ¥Åä,ÒÆ²½±¨´í
+@REM ::æ²¡æœ‰åŒ¹é…,ç§»æ­¥æŠ¥é”™
 @REM set "ErrorCode=TeaPot" && goto tpa
 
 @REM :tpa
-@REM ::Ìø×ª¹ÜÀíÆ÷-Ö´ĞĞ
+@REM ::è·³è½¬ç®¡ç†å™¨-æ‰§è¡Œ
 @REM if "%TPCode%" neq "" goto %TPCode%
-@REM ::Òì³£±äÁ¿Ìø×ª
-@REM if "%ErrorCode%" == "TeaPot" echo "Ìø×ª¹ÜÀíÆ÷Óöµ½ÑÏÖØ´íÎó,ÕıÔÚ×ªµ½Åú´¦ÀíÖ÷²Ëµ¥¡­" && timeout /t 3 && goto Menu
+@REM ::å¼‚å¸¸å˜é‡è·³è½¬
+@REM if "%ErrorCode%" == "TeaPot" echo "è·³è½¬ç®¡ç†å™¨é‡åˆ°ä¸¥é‡é”™è¯¯,æ­£åœ¨è½¬åˆ°æ‰¹å¤„ç†ä¸»èœå•â€¦" && timeout /t 3 && goto Menu
 
 
 :DataDirectoryChecker
-@REM ÓÃ»§Êı¾İÎÄ¼ş¼Ğ¼ì²âÓë´´½¨Ä£¿é
+@REM ç”¨æˆ·æ•°æ®æ–‡ä»¶å¤¹æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 color 06
-echo ÕıÔÚ¼ì²âµ±Ç°ÓÃ»§Êı¾İÄ¿Â¼¡­
+echo æ­£åœ¨æ£€æµ‹å½“å‰ç”¨æˆ·æ•°æ®ç›®å½•â€¦
 if exist "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\" (
     color 02
-    echo µ±Ç°ÓÃ»§Êı¾İÄ¿Â¼ÒÑ´æÔÚ!
+    echo å½“å‰ç”¨æˆ·æ•°æ®ç›®å½•å·²å­˜åœ¨!
     goto CacheDirectoryChecker
 ) else (
     color 04
-    echo ÕıÔÚ´´½¨µ±Ç°ÓÃ»§Êı¾İÄ¿Â¼¡­
+    echo æ­£åœ¨åˆ›å»ºå½“å‰ç”¨æˆ·æ•°æ®ç›®å½•â€¦
     mkdir %userprofile%\AppData\Local\SakuraMaple\hosts_Backups\
     goto DataDirectoryCheckerLast
 )
 echo.
 
 :DataDirectoryCheckerLast
-@REM ÓÃ»§Êı¾İÎÄ¼ş¼Ğ¼ì²âÓë´´½¨Ä£¿é
+@REM ç”¨æˆ·æ•°æ®æ–‡ä»¶å¤¹æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 if exist "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\" (
     color 02
-    echo µ±Ç°ÓÃ»§Êı¾İÄ¿Â¼ÒÑ´æÔÚ!
+    echo å½“å‰ç”¨æˆ·æ•°æ®ç›®å½•å·²å­˜åœ¨!
     goto CacheDirectoryChecker
 ) else (
     color 04
-    echo ·¢Éú´íÎó,Ä¿Â¼Ã»ÄÜ´´½¨,Çë¼ì²éÈ¨ÏŞÎÊÌâ!
+    echo å‘ç”Ÿé”™è¯¯,ç›®å½•æ²¡èƒ½åˆ›å»º,è¯·æ£€æŸ¥æƒé™é—®é¢˜!
     pause
     goto x
 )
 
 :CacheDirectoryChecker
-@REM ÓÃ»§»º´æÎÄ¼ş¼Ğ¼ì²âÓë´´½¨Ä£¿é
+@REM ç”¨æˆ·ç¼“å­˜æ–‡ä»¶å¤¹æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 color 06
-echo ÕıÔÚ¼ì²âµ±Ç°ÓÃ»§»º´æÄ¿Â¼¡­
+echo æ­£åœ¨æ£€æµ‹å½“å‰ç”¨æˆ·ç¼“å­˜ç›®å½•â€¦
 if exist "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\" (
     color 02
-    echo µ±Ç°ÓÃ»§»º´æÄ¿Â¼ÒÑ´æÔÚ!
+    echo å½“å‰ç”¨æˆ·ç¼“å­˜ç›®å½•å·²å­˜åœ¨!
     goto hostsFileChecker
 ) else (
     color 04
-    echo ÕıÔÚ´´½¨µ±Ç°ÓÃ»§»º´æÄ¿Â¼¡­
+    echo æ­£åœ¨åˆ›å»ºå½“å‰ç”¨æˆ·ç¼“å­˜ç›®å½•â€¦
     mkdir %userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\
     goto CacheDirectoryCheckerLast
 )
 echo.
 
 :CacheDirectoryCheckerLast
-@REM ÓÃ»§»º´æÎÄ¼ş¼Ğ¼ì²âÓë´´½¨Ä£¿é
+@REM ç”¨æˆ·ç¼“å­˜æ–‡ä»¶å¤¹æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 if exist "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\" (
     color 02
-    echo µ±Ç°ÓÃ»§»º´æÄ¿Â¼ÒÑ´æÔÚ!
+    echo å½“å‰ç”¨æˆ·ç¼“å­˜ç›®å½•å·²å­˜åœ¨!
     goto hostsFileChecker
 ) else (
     color 04
-    echo ·¢Éú´íÎó,Ä¿Â¼Ã»ÄÜ´´½¨,Çë¼ì²éÈ¨ÏŞÎÊÌâ!
+    echo å‘ç”Ÿé”™è¯¯,ç›®å½•æ²¡èƒ½åˆ›å»º,è¯·æ£€æŸ¥æƒé™é—®é¢˜!
     pause
     goto x
 )
 
 :hostsFileChecker
-@REM hostsÎÄ¼ş¼ì²âÓë´´½¨Ä£¿é
+@REM hostsæ–‡ä»¶æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 color 06
-echo ÕıÔÚ¼ì²âhostsÎÄ¼şÊÇ·ñ´æÔÚ
+echo æ­£åœ¨æ£€æµ‹hostsæ–‡ä»¶æ˜¯å¦å­˜åœ¨
 if exist "%windir%\System32\drivers\etc\hosts" (
-    echo hostsÎÄ¼ş´æÔÚ!
+    echo hostsæ–‡ä»¶å­˜åœ¨!
 ) else (
-    echo ÕıÔÚ´´½¨hostsÎÄ¼ş¡­
+    echo æ­£åœ¨åˆ›å»ºhostsæ–‡ä»¶â€¦
     type nul>"%windir%\System32\drivers\etc\hosts"
     goto hostsFileCheckerLast
 )
 echo.
 
 :hostsFileCheckerLast
-@REM hostsÎÄ¼ş¼ì²âÓë´´½¨Ä£¿é
+@REM hostsæ–‡ä»¶æ£€æµ‹ä¸åˆ›å»ºæ¨¡å—
 if exist "%windir%\System32\drivers\etc\hosts" (
-    echo hostsÎÄ¼ş´æÔÚ!
+    echo hostsæ–‡ä»¶å­˜åœ¨!
 ) else (
     color 04
-    echo ·¢Éú´íÎó,Ä¿Â¼Ã»ÄÜ´´½¨,Çë¼ì²éÊÇ·ñÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ
-    echo »òÎÄ¼ş¼Ğ/ÎÄ¼ş¾Ü¾ø·ÃÎÊ,Èç:´æÔÚ°²È«Èí¼ş×èÖ¹!
+    echo å‘ç”Ÿé”™è¯¯,ç›®å½•æ²¡èƒ½åˆ›å»º,è¯·æ£€æŸ¥æ˜¯å¦ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ
+    echo æˆ–æ–‡ä»¶å¤¹/æ–‡ä»¶æ‹’ç»è®¿é—®,å¦‚:å­˜åœ¨å®‰å…¨è½¯ä»¶é˜»æ­¢!
     pause
     goto x
 )
 
 
 :Menu
-@REM ¹¦ÄÜ²Ëµ¥
+@REM åŠŸèƒ½èœå•
 color 03
 
-@REM Çå³ıAutoRun¹¦ÄÜ
+@REM æ¸…é™¤AutoRunåŠŸèƒ½
 set "AutoRun=false"
 
 echo ==================================================
-echo + ¼üÈëa±¸·İ²¢Ğ´Èë(×Ô¶¯Ö´ĞĞ)(×¢:ÇëÎğÖØ¸´Ö´ĞĞ!)
-echo + ¼üÈëo±éÀú %windir%\System32\drivers\etc\ÏÂµÄÎÄ¼ş
-echo + ¼üÈëpÊä³öhostsÎÄ¼şÄÚÈİ
-echo + ¼üÈëtÏòhostsÎÄ¼şĞ´ÈëhostĞÅÏ¢(×¢:ÇëÎğÖØ¸´Ö´ĞĞ!)
-echo + ¼üÈëb±¸·İhostsÎÄ¼ş
-echo + ¼üÈër´Ó×îĞÂµÄ±¸·İÎÄ¼ş»¹Ô­hostsÎÄ¼ş
-echo + ¼üÈëcÇå¿Õ¿ØÖÆÌ¨(²¿·ÖÖÕ¶ËÎŞĞ§)
-echo + ¼üÈëxÍË³ö
+echo + é”®å…¥aå¤‡ä»½å¹¶å†™å…¥(è‡ªåŠ¨æ‰§è¡Œ)(æ³¨:è¯·å‹¿é‡å¤æ‰§è¡Œ!)
+echo + é”®å…¥oéå† %windir%\System32\drivers\etc\ä¸‹çš„æ–‡ä»¶
+echo + é”®å…¥pè¾“å‡ºhostsæ–‡ä»¶å†…å®¹
+echo + é”®å…¥tå‘hostsæ–‡ä»¶å†™å…¥hostä¿¡æ¯(æ³¨:è¯·å‹¿é‡å¤æ‰§è¡Œ!)
+echo + é”®å…¥bå¤‡ä»½hostsæ–‡ä»¶
+echo + é”®å…¥rä»æœ€æ–°çš„å¤‡ä»½æ–‡ä»¶è¿˜åŸhostsæ–‡ä»¶
+echo + é”®å…¥cæ¸…ç©ºæ§åˆ¶å°(éƒ¨åˆ†ç»ˆç«¯æ— æ•ˆ)
+echo + é”®å…¥xé€€å‡º
 echo ==================================================
-@REM Ñ¡Ïî
+@REM é€‰é¡¹
 choice /C aoptbrcx /CS
 if %errorlevel% == 1 goto Auto
 if %errorlevel% == 2 goto Output
@@ -165,25 +159,25 @@ if %errorlevel% == 5 goto Backup
 if %errorlevel% == 6 goto Recovery
 if %errorlevel% == 7 goto Cleaner
 if %errorlevel% == 8 goto x
-@REM ´íÎó»ØÊÕ
+@REM é”™è¯¯å›æ”¶
 color 06
-echo ********·¢Éú´íÎó********
+echo ********å‘ç”Ÿé”™è¯¯********
 goto Menu
 
 :Auto
-@REM ×Ô¶¯Ö´ĞĞÈ·ÈÏ
+@REM è‡ªåŠ¨æ‰§è¡Œç¡®è®¤
 set "AutoRun=true"
-choice /C yn /CS /T 5 /D y /M "ÊÇ·ñÒª×Ô¶¯Ö´ĞĞ?(Ä¬ÈÏ5ÃëºóÖ´ĞĞ)"
+choice /C yn /CS /T 5 /D y /M "æ˜¯å¦è¦è‡ªåŠ¨æ‰§è¡Œ?(é»˜è®¤5ç§’åæ‰§è¡Œ)"
 if %errorlevel% == 1 goto Run
 if %errorlevel% == 2 goto ShutdownAutoRun
 
 :Run
-@REM ×Ô¶¯Ö´ĞĞ
+@REM è‡ªåŠ¨æ‰§è¡Œ
 
 :Output
-@REM ±éÀú %windir%\System32\drivers\etc\ ÏÂµÄÄ¿Â¼½á¹¹
+@REM éå† %windir%\System32\drivers\etc\ ä¸‹çš„ç›®å½•ç»“æ„
 dir /A %windir%\System32\drivers\etc\
-@REM ÅĞ¶Ï×Ô¶¯»¯Ö´ĞĞ×´Ì¬
+@REM åˆ¤æ–­è‡ªåŠ¨åŒ–æ‰§è¡ŒçŠ¶æ€
 if "%AutoRun%" == "true" (
     echo.
 ) else (
@@ -191,22 +185,22 @@ if "%AutoRun%" == "true" (
 )
 
 :Backup
-@REM ±¸·İhostsÎÄ¼şÄ£¿é
+@REM å¤‡ä»½hostsæ–‡ä»¶æ¨¡å—
 setlocal enabledelayedexpansion
-@REM »ñÈ¡ÈÕÆÚºÍÊ±¼äĞÅÏ¢
-@REM ´¦ÀíÈÕÆÚ¸ñÊ½:ÒÆ³ı"ÖÜ"
+@REM è·å–æ—¥æœŸå’Œæ—¶é—´ä¿¡æ¯
+@REM å¤„ç†æ—¥æœŸæ ¼å¼:ç§»é™¤"å‘¨"
 set StandardDate=%date:~0,10%
-@REM ´¦ÀíÈÕÆÚ¸ñÊ½:´¦Àí¸ñÊ½,½«"/"Ìæ»»Îª"-"
+@REM å¤„ç†æ—¥æœŸæ ¼å¼:å¤„ç†æ ¼å¼,å°†"/"æ›¿æ¢ä¸º"-"
 set UseDate=!StandardDate:/=-!
-@REM ´¦ÀíÊ±¼ä¸ñÊ½:ÒÆ³ıÃëºóÃæµÄĞ¡ÊıÎ»
+@REM å¤„ç†æ—¶é—´æ ¼å¼:ç§»é™¤ç§’åé¢çš„å°æ•°ä½
 set StandardTime=%time:~0,8%
-@REM ´¦ÀíÊ±¼ä¸ñÊ½:´¦Àí¸ñÊ½,½«":"Ìæ»»Îª"-"
+@REM å¤„ç†æ—¶é—´æ ¼å¼:å¤„ç†æ ¼å¼,å°†":"æ›¿æ¢ä¸º"-"
 set UseTime=!StandardTime::=-!
-@REM ÈÕÆÚ-Ê±¼ä: !UseDate!-!UseTime!
-echo ÕıÔÚ±¸·İ¡­
+@REM æ—¥æœŸ-æ—¶é—´: !UseDate!-!UseTime!
+echo æ­£åœ¨å¤‡ä»½â€¦
 copy "%windir%\System32\drivers\etc\hosts" "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\hosts_!UseDate!-!UseTime!" /Y
 type "%windir%\System32\drivers\etc\hosts">"%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\hosts_last"
-@REM ÅĞ¶Ï×Ô¶¯»¯Ö´ĞĞ×´Ì¬
+@REM åˆ¤æ–­è‡ªåŠ¨åŒ–æ‰§è¡ŒçŠ¶æ€
 if "%AutoRun%" == "true" (
     echo.
 ) else (
@@ -214,19 +208,19 @@ if "%AutoRun%" == "true" (
 )
 
 :Typer
-@REM Ğ´ÈëhostsÎÄ¼şÄ£¿é
-@REM ÅĞ¶ÏLocalÎÄ¼ş¼ĞÊÇ·ñ´æÔÚhosts±¸·İÎÄ¼ş
+@REM å†™å…¥hostsæ–‡ä»¶æ¨¡å—
+@REM åˆ¤æ–­Localæ–‡ä»¶å¤¹æ˜¯å¦å­˜åœ¨hostså¤‡ä»½æ–‡ä»¶
 if exist "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\hosts_last" (
     goto TyperRun
 ) else (
-    echo Ã»ÓĞ±¸·İhostsÎÄ¼ş!
+    echo æ²¡æœ‰å¤‡ä»½hostsæ–‡ä»¶!
     echo.
     goto TyperChoice
 )
 
 :TyperRun
-@REM Ğ´ÈëÄ£¿é
-echo ÕıÔÚĞ´Èë¡­
+@REM å†™å…¥æ¨¡å—
+echo æ­£åœ¨å†™å…¥â€¦
 echo.>>"%windir%\System32\drivers\etc\hosts"
 echo # SakuraMaple-Minecraft-Java-Edition-1-16-Series-Offline-Client-Send-Server-Message-Fix-Tool>>"%windir%\System32\drivers\etc\hosts"
 echo 127.0.0.1 authserver.mojang.com>>"%windir%\System32\drivers\etc\hosts"
@@ -239,7 +233,7 @@ echo ::1 sessionserver.mojang.com>>"%windir%\System32\drivers\etc\hosts"
 echo ::1 api.minecraftservices.com>>"%windir%\System32\drivers\etc\hosts"
 echo # =====================================================>>"%windir%\System32\drivers\etc\hosts"
 echo.
-@REM ÅĞ¶Ï×Ô¶¯»¯Ö´ĞĞ×´Ì¬
+@REM åˆ¤æ–­è‡ªåŠ¨åŒ–æ‰§è¡ŒçŠ¶æ€
 if "%AutoRun%" == "true" (
     echo.
 ) else (
@@ -247,10 +241,10 @@ if "%AutoRun%" == "true" (
 )
 
 :Printer
-@REM ÆÁÏÔhostsÎÄ¼şÄÚÈİÄ£¿é
-echo µ±Ç°hostsÎÄ¼şÄÚÈİ
+@REM å±æ˜¾hostsæ–‡ä»¶å†…å®¹æ¨¡å—
+echo å½“å‰hostsæ–‡ä»¶å†…å®¹
 type "%windir%\System32\drivers\etc\hosts"
-@REM ÅĞ¶Ï×Ô¶¯»¯Ö´ĞĞ×´Ì¬
+@REM åˆ¤æ–­è‡ªåŠ¨åŒ–æ‰§è¡ŒçŠ¶æ€
 if "%AutoRun%" == "true" (
     echo.
 ) else (
@@ -258,33 +252,33 @@ if "%AutoRun%" == "true" (
 )
 
 :ShutdownAutoRun
-@REM ¹Ø±Õ×Ô¶¯Ö´ĞĞ
+@REM å…³é—­è‡ªåŠ¨æ‰§è¡Œ
 set "AutoRun=false"
 goto Menu
 
 :TyperChoice
-@REM Î´¼ì²âµ½±¸·İhostsÎÄ¼şÊ±µÄĞ´ÈëÑ¡Ïî
-echo Ã»ÓĞ±¸·İhostsÎÄ¼ş,ÊÇ·ñ¼ÌĞøĞ´Èë?
-echo ¼üÈë y ¼ÌĞøĞ´Èë(Î£ÏÕ)
-echo ¼üÈë b Ç°Íù±¸·İ
-echo ¼üÈë n ·µ»ØÖ÷²Ëµ¥
+@REM æœªæ£€æµ‹åˆ°å¤‡ä»½hostsæ–‡ä»¶æ—¶çš„å†™å…¥é€‰é¡¹
+echo æ²¡æœ‰å¤‡ä»½hostsæ–‡ä»¶,æ˜¯å¦ç»§ç»­å†™å…¥?
+echo é”®å…¥ y ç»§ç»­å†™å…¥(å±é™©)
+echo é”®å…¥ b å‰å¾€å¤‡ä»½
+echo é”®å…¥ n è¿”å›ä¸»èœå•
 choice /C ybn /CS
 if %errorlevel% == 1 goto TyperRun
 if %errorlevel% == 2 goto Backup
 if %errorlevel% == 3 goto Menu
 
-@REM ´íÎó»ØÊÕ
+@REM é”™è¯¯å›æ”¶
 color 06
-echo ********·¢Éú´íÎó,¼´½«·µ»ØÖ÷²Ëµ¥********
+echo ********å‘ç”Ÿé”™è¯¯,å³å°†è¿”å›ä¸»èœå•********
 goto Menu
 
 :Recovery
-@REM »¹Ô­hostsÎÄ¼şÄ£¿é
+@REM è¿˜åŸhostsæ–‡ä»¶æ¨¡å—
 
 :RecoveryOnLocal
-@REM ÅĞ¶ÏLocalÎÄ¼ş¼ĞÏÂµÄ±¸·İÎÄ¼şÊÇ·ñ´æÔÚ
+@REM åˆ¤æ–­Localæ–‡ä»¶å¤¹ä¸‹çš„å¤‡ä»½æ–‡ä»¶æ˜¯å¦å­˜åœ¨
 if exist "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\hosts_last" (
-    echo hosts±¸·İÎÄ¼ş´æÔÚ^!
+    echo hostså¤‡ä»½æ–‡ä»¶å­˜åœ¨^!
     set "RecoveryFile=Local"
     goto RecoveryRun
 ) else (
@@ -292,9 +286,9 @@ if exist "%userprofile%\AppData\Local\SakuraMaple\hosts_Backups\hosts_last" (
 )
 
 :RecoveryOnRoaming
-@REM ÅĞ¶ÏRoamingÎÄ¼ş¼ĞÏÂµÄ±¸·İÎÄ¼şÊÇ·ñ´æÔÚ
+@REM åˆ¤æ–­Roamingæ–‡ä»¶å¤¹ä¸‹çš„å¤‡ä»½æ–‡ä»¶æ˜¯å¦å­˜åœ¨
 if exist "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\hosts_last" (
-    echo hosts±¸·İÎÄ¼ş´æÔÚ^!
+    echo hostså¤‡ä»½æ–‡ä»¶å­˜åœ¨^!
     set "RecoveryFile=Roaming"
     goto RecoveryRun
 ) else (
@@ -302,62 +296,62 @@ if exist "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\hosts_last" (
 )
 
 :RecoveryRun
-@REM ÅĞ¶Ï±¸·İÎÄ¼şÎ»ÖÃ
-if "%RecoveryFile%"=="Local" set "RecoveryText=Êı¾İ" && goto RecoveryRunnerChoice
-if "%RecoveryFile%"=="Roaming" set "RecoveryText=»º´æ" && goto RecoveryRunnerChoice
-set "RecoveryText=Î´Öª(¿ÉÄÜÊ§°Ü)"
+@REM åˆ¤æ–­å¤‡ä»½æ–‡ä»¶ä½ç½®
+if "%RecoveryFile%"=="Local" set "RecoveryText=æ•°æ®" && goto RecoveryRunnerChoice
+if "%RecoveryFile%"=="Roaming" set "RecoveryText=ç¼“å­˜" && goto RecoveryRunnerChoice
+set "RecoveryText=æœªçŸ¥(å¯èƒ½å¤±è´¥)"
 
 :RecoveryRunnerChoice
-@REM »¹Ô­Ñ¡Ïî
-echo ÊÇ·ñÒªÊ¹ÓÃ %RecoveryText% µÄ±¸·İÎÄ¼ş»¹Ô­hosts?(²»¿ÉÄæ!)
-echo ¼üÈë Y ¿ªÊ¼»¹Ô­,¼üÈë N È¡Ïû»¹Ô­,¼üÈë m ²é¿´ÆäËüÑ¡Ïî
+@REM è¿˜åŸé€‰é¡¹
+echo æ˜¯å¦è¦ä½¿ç”¨ %RecoveryText% çš„å¤‡ä»½æ–‡ä»¶è¿˜åŸhosts?(ä¸å¯é€†!)
+echo é”®å…¥ Y å¼€å§‹è¿˜åŸ,é”®å…¥ N å–æ¶ˆè¿˜åŸ,é”®å…¥ m æŸ¥çœ‹å…¶å®ƒé€‰é¡¹
 choice /C ynm /CS
 if %errorlevel% == 1 goto RecoveryRunner
 if %errorlevel% == 2 goto Menu
 if %errorlevel% == 3 goto RecoveryModify
 
-@REM ´íÎó»ØÊÕ
+@REM é”™è¯¯å›æ”¶
 color 06
-echo ********·¢Éú´íÎó,¼´½«·µ»ØÖ÷²Ëµ¥********
+echo ********å‘ç”Ÿé”™è¯¯,å³å°†è¿”å›ä¸»èœå•********
 goto Menu
 
 :RecoveryModify
-@REM ¸ü¸ÄÓÃÓÚ»¹Ô­µÄÎÄ¼şµÄËùÔÚÎ»ÖÃ
-echo µ±Ç°Ê¹ÓÃµÄÊÇ%RecoveryText%µÄ±¸·İÎÄ¼ş»¹Ô­hosts
-echo ÈôÒªÊ¹ÓÃLocalÎÄ¼ş¼ĞÏÂµÄ±¸·İ(Ä¬ÈÏ±¸·İ),Çë¼üÈë L
-echo ÈôÒªÊ¹ÓÃRoamingÎÄ¼ş¼ĞÏÂµÄ±¸·İ,Çë¼üÈë R
-echo ¸ü¶àÎ»Î»ÖÃÇë¼üÈë m
+@REM æ›´æ”¹ç”¨äºè¿˜åŸçš„æ–‡ä»¶çš„æ‰€åœ¨ä½ç½®
+echo å½“å‰ä½¿ç”¨çš„æ˜¯%RecoveryText%çš„å¤‡ä»½æ–‡ä»¶è¿˜åŸhosts
+echo è‹¥è¦ä½¿ç”¨Localæ–‡ä»¶å¤¹ä¸‹çš„å¤‡ä»½(é»˜è®¤å¤‡ä»½),è¯·é”®å…¥ L
+echo è‹¥è¦ä½¿ç”¨Roamingæ–‡ä»¶å¤¹ä¸‹çš„å¤‡ä»½,è¯·é”®å…¥ R
+echo æ›´å¤šä½ä½ç½®è¯·é”®å…¥ m
 choice /C lrm /CS
 if %errorlevel% == 1 set "RecoveryFile=Local" && goto RecoveryFileModifyCheck
 if %errorlevel% == 2 set "RecoveryFile=Roaming" && goto RecoveryFileModifyCheck
 if %errorlevel% == 3 set "RecoveryFile=" && goto RecoveryForget
 
-@REM ´íÎó»ØÊÕ
+@REM é”™è¯¯å›æ”¶
 color 06
-echo ********·¢Éú´íÎó,¼´½«·µ»ØÖ÷²Ëµ¥********
+echo ********å‘ç”Ÿé”™è¯¯,å³å°†è¿”å›ä¸»èœå•********
 goto Menu
 
 :RecoveryFileModifyCheck
-@REM ¼ì²é¸ü¸ÄºóµÄÎÄ¼ş¼ĞÏÂ±¸·İÎÄ¼şÊÇ·ñ´æÔÚ
+@REM æ£€æŸ¥æ›´æ”¹åçš„æ–‡ä»¶å¤¹ä¸‹å¤‡ä»½æ–‡ä»¶æ˜¯å¦å­˜åœ¨
 if exist "%userprofile%\AppData\%RecoveryFile%\SakuraMaple\hosts_Backups\hosts_last" (
-    echo hosts±¸·İÎÄ¼ş´æÔÚ!
+    echo hostså¤‡ä»½æ–‡ä»¶å­˜åœ¨!
     goto RecoveryRun
 ) else (
     goto RecoveryForget
 )
 
 :RecoveryForget
-@REM ÕÒ²»µ½±¸·İÎÄ¼şÑ¡Ïî
+@REM æ‰¾ä¸åˆ°å¤‡ä»½æ–‡ä»¶é€‰é¡¹
 if "%RecoveryFile%" == "" (
-    echo ÊÖ¶¯ÅäÖÃ:
-    echo ¼üÈë s ÇĞ»»Î»ÖÃ
+    echo æ‰‹åŠ¨é…ç½®:
+    echo é”®å…¥ s åˆ‡æ¢ä½ç½®
 ) else (
-    echo Ã»ÓĞÕÒµ½hosts±¸·İÎÄ¼ş
-    echo Çë³¢ÊÔÇĞ»»Î»ÖÃ^(¼üÈë s ^)»ò
+    echo æ²¡æœ‰æ‰¾åˆ°hostså¤‡ä»½æ–‡ä»¶
+    echo è¯·å°è¯•åˆ‡æ¢ä½ç½®^(é”®å…¥ s ^)æˆ–
 )
-echo ÊÖ¶¯·ÅÈë"hosts"ÎÄ¼şµ½ "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\" (¼üÈë o ´ò¿ªÎÄ¼ş¼Ğ[ÊµÑéĞÔ])
-echo ²¢ÃüÃûÎª"hosts_last"(×¢:Ã»ÓĞÀ©Õ¹Ãû!)(×¢:´ò¿ªÎÄ¼ş¼Ğ¹¦ÄÜ½öÖ§³ÖÓĞÍ¼ĞÎ»¯µÄWindows»òWindows Server²Ù×÷ÏµÍ³[ÊµÑéĞÔ])
-echo ¼üÈë r ÖØĞÂ¼ì²â
+echo æ‰‹åŠ¨æ”¾å…¥"hosts"æ–‡ä»¶åˆ° "%userprofile%\AppData\Roaming\SakuraMaple\hosts_Backups\" (é”®å…¥ o æ‰“å¼€æ–‡ä»¶å¤¹[å®éªŒæ€§])
+echo å¹¶å‘½åä¸º"hosts_last"(æ³¨:æ²¡æœ‰æ‰©å±•å!)(æ³¨:æ‰“å¼€æ–‡ä»¶å¤¹åŠŸèƒ½ä»…æ”¯æŒæœ‰å›¾å½¢åŒ–çš„Windowsæˆ–Windows Serveræ“ä½œç³»ç»Ÿ[å®éªŒæ€§])
+echo é”®å…¥ r é‡æ–°æ£€æµ‹
 choice /C sor /CS
 if %errorlevel% == 1 goto RecoveryModify
 if %errorlevel% == 2 (
@@ -366,26 +360,26 @@ if %errorlevel% == 2 (
 )
 if %errorlevel% == 3 set "RecoveryFile=Roaming" && goto RecoveryFileModifyCheck
 
-@REM ´íÎó»ØÊÕ
+@REM é”™è¯¯å›æ”¶
 color 06
-echo ********·¢Éú´íÎó,¼´½«·µ»ØÖ÷²Ëµ¥********
+echo ********å‘ç”Ÿé”™è¯¯,å³å°†è¿”å›ä¸»èœå•********
 goto Menu
 
 :RecoveryRunner
-@REM Ğ´ÈëÄ£¿é
+@REM å†™å…¥æ¨¡å—
 type "%userprofile%\AppData\%RecoveryFile%\SakuraMaple\hosts_Backups\hosts_last">"%windir%\System32\drivers\etc\hosts"
 echo.
-echo µ±Ç°hostsÎÄ¼şÄÚÈİ:
+echo å½“å‰hostsæ–‡ä»¶å†…å®¹:
 type "%windir%\System32\drivers\etc\hosts"
 pause
 goto Menu
 
 :Cleaner
-@REM ÇåÆÁÄ£¿é
+@REM æ¸…å±æ¨¡å—
 cls
 goto Menu
 
 :x
-@REM ÍË³ö
+@REM é€€å‡º
 timeout /t 8
 exit
